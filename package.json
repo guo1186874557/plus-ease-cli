@@ -1,0 +1,46 @@
+{
+  "name": "plus-ease-cli",
+  "version": "0.0.1",
+  "description": "用户拉取代码模板",
+  "keywords": [
+    "Vite",
+    "plus-ease-cli",
+    "Vue3",
+    "TypeScript",
+    "element-plus"
+  ],
+  "type": "module",
+  "author": "guoguo",
+  "scripts": {
+    "build": "npx rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "bin": {
+    "plus-ease-cli": "bin/index.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.13.1",
+    "@types/prompts": "^2.4.9",
+    "rollup": "^4.34.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.8.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "ora": "^8.2.0",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "simple-git": "^3.27.0"
+  }
+}
